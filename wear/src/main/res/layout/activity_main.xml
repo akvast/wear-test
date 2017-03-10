@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.github.akvast.weartest.MainActivity" />
+    </data>
+
+    <android.support.wearable.view.BoxInsetLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_box="all">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show list"
+                android:layout_gravity="bottom|center"
+                android:onClick="@{(v) -> activity.openListActivity(v)}"/>
+
+        </FrameLayout>
+
+    </android.support.wearable.view.BoxInsetLayout>
+
+</layout>
