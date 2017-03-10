@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 
+import com.github.akvast.viewmodeladapter.ViewModelAdapter;
 import com.github.akvast.weartest.databinding.ActivityListBinding;
 
 public final class ListActivity extends Activity {
