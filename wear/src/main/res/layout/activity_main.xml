@@ -4,30 +4,43 @@
 
     <data>
 
+        <import type="com.github.akvast.weartest.utils.ViewModelUtils" />
+
         <variable
             name="activity"
-            type="com.github.akvast.weartest.MainActivity" />
+            type="com.github.akvast.weartest.ui.MainActivity"/>
     </data>
 
-    <android.support.wearable.view.BoxInsetLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="20dp">
+        android:layout_height="match_parent">
 
-        <FrameLayout
+        <com.facebook.drawee.view.SimpleDraweeView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_box="all">
+            app:src="@{activity.background}"/>
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Show list"
-                android:layout_gravity="bottom|center"
-                android:onClick="@{(v) -> activity.openListActivity(v)}"/>
+        <android.support.wearable.view.BoxInsetLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
 
-        </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_box="all">
 
-    </android.support.wearable.view.BoxInsetLayout>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:onClick="@{(v) -> activity.openListActivity(v)}"
+                    android:text="Show list"/>
+
+            </FrameLayout>
+
+        </android.support.wearable.view.BoxInsetLayout>
+
+    </FrameLayout>
 
 </layout>

@@ -1,7 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-
-          package="com.github.akvast.weartest"
-    >
+          package="com.github.akvast.weartest">
 
     <application
         android:allowBackup="true"

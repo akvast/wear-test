@@ -1,4 +1,4 @@
-package com.github.akvast.weartest;
+package com.github.akvast.weartest.ui;
 
 import android.app.Activity;
 import android.databinding.DataBindingUtil;
@@ -8,6 +8,8 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 
 import com.github.akvast.viewmodeladapter.ViewModelAdapter;
+import com.github.akvast.weartest.BR;
+import com.github.akvast.weartest.R;
 import com.github.akvast.weartest.databinding.ActivityListBinding;
 
 public final class ListActivity extends Activity {
