@@ -25,9 +25,15 @@ android {
     }
 }
 
+ext {
+    playServicesVersion = "10.2.0"
+}
+
 dependencies {
     compile 'com.google.android.support:wearable:2.0.0'
-    compile 'com.google.android.gms:play-services-wearable:10.2.0'
+
+    compile "com.google.android.gms:play-services-wearable:${playServicesVersion}"
+    compile "com.google.android.gms:play-services-location:${playServicesVersion}"
 
     compile('com.github.akvast:viewmodeladapter:0.1.0') {
         exclude group: 'com.android.support'
